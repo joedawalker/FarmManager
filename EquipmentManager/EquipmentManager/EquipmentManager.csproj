@@ -36,6 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Framework.NetCore.Web\Framework.NetCore.Web.csproj" />
     <ProjectReference Include="..\..\UserService\UserService.csproj" />
   </ItemGroup>
 

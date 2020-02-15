@@ -1,3 +1,4 @@
+using Framework.NetCore.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
@@ -25,6 +26,10 @@ namespace EquipmentManager
         public void ConfigureServices( IServiceCollection services )
         {
             services.AddControllersWithViews();
+
+            // Add a filter to handle HTTP response exceptions
+            services.AddControllers( options =>
+                options.Filters.Add( new HttpResponseExceptionFilter() ) );
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen( c =>
