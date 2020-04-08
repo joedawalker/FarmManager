@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
-namespace UserService
+namespace EquipmentApi.Classes
 {
     public class User
     {
@@ -19,7 +16,7 @@ namespace UserService
         [JsonPropertyName( "email" )]
         public string Email { get; set; }
 
-        [JsonPropertyName( "pasword" )]
+        [JsonPropertyName( "password" )]
         public string Password { get; set; }
     }
 }

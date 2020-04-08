@@ -1,4 +1,4 @@
-﻿namespace UserService
+﻿namespace EquipmentApi.Classes
 {
     public enum UserValidationFailureType
     {
@@ -10,6 +10,8 @@
         PasswordBadFormat = 5,
         UserNotFound = 6,
         InvalidId = 7,
-        GenericError = 8
+        GenericError = 8,
+        EmailAlreadyInUse = 9,
+        UserIsNull = 10
     }
 }
